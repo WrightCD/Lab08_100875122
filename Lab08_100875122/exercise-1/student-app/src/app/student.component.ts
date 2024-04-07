@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 
 @Component({
   selector: 'students',
-  template: '<h2>{{getTitle()}}</h2><br/><p>{{getDate()}}</p>'
+  template: '<h2>{{getTitle()}}</h2><br/><p>{{getCurrentDate()}}</p>'
 })
 
 export class StudentsComponent{
@@ -12,7 +12,7 @@ export class StudentsComponent{
     return this.title;
   }
 
-  getDate(){
+  getCurrentDate(){
     return Date();
   }
 }
